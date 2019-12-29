@@ -131,9 +131,9 @@ class RatingPlugin(plugins.SingletonPlugin, DefaultTranslation):
                     controller='ckanext.rating.controller:RatingController',
                     action='submit_package_rating')
 
-        map.connect('/rating/showcase/:package/:rating',
-                    controller='ckanext.rating.controller:RatingController',
-                    action='submit_showcase_rating')
+        # map.connect('/rating/showcase/:package/:rating',
+                    # controller='ckanext.rating.controller:RatingController',
+                    # action='submit_showcase_rating')
 
         map.connect(
             '/dataset',
